@@ -12,7 +12,7 @@ public class CowStrikeController {
         this.view = view;  
         this.status = status;
     }
-
+    
     public void processCowQueue() {
         for (Cow cow : cowQueue) {
             if (cow.isMale() || cow.getUdders() != 4) {
@@ -36,4 +36,5 @@ public class CowStrikeController {
             view.displayMachineStatus(machine);
         }
     }
+
 }
